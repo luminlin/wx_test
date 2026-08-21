@@ -1,0 +1,14 @@
+-
+  feature: 公众号模块
+  story: 编辑标签接口
+  title: 验证编辑标签接口成功返回
+  request:
+    method: post
+    url: ${env(wx_base_url)}/cgi-bin/tags/update?access_token=${get_extract_data(access_token)}
+    json:
+      tag:
+        id: 134
+        name: hua
+  validate:
+    errcode: 0
+    errmsg: 'ok'

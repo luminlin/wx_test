@@ -1,0 +1,9 @@
+requests
+jsonpath
+pytest  # 本身单元框架
+pytest-html  # 生成html测试报告
+pytest-xdist  # 多cPu分发
+pytest-ordering  # 标记被执行函数的顺序
+pytest-rerunfailures  # 失败用例重复执行
+pytest-base-url  # 管理base-url基础路径的插件
+allure-pytest  # 生成美观的测试报告

@@ -1,0 +1,9 @@
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] ========== 开始执行用例：密码错误-返回空 ==========
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 解析yaml数据为https://api.weixin.qq.com/cgi-bin/token
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 解析yaml数据为{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '123'}
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 请求method参数地址:get
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 请求url参数地址:https://api.weixin.qq.com/cgi-bin/token
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 请求params参数地址:{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '123'}
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 响应结果为{"errcode": 40125, "errmsg": "invalid appsecret rid: 6a854464-270dc554-2becb0bd"}
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 字段存在校验通过：预期字段errcode
+INFO     root:request_utils.py:14 [2026-08-19 13:51:32] 校验expires_in通过：预期None，实际None

@@ -1,0 +1,11 @@
+-
+  feature: 公众号模块
+  story: 文件上传接口
+  title: 验证文件上传接口成功返回
+  request:
+    method: post
+    url: ${env(wx_base_url)}/cgi-bin/media/uploadimg?access_token=${get_extract_data(access_token)}
+    files:
+        media: ${env(file_path)}
+  validate:
+    contains: "url"

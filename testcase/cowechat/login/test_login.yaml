@@ -1,0 +1,21 @@
+﻿-
+  feature: 公众号模块
+  story: 获取鉴权码接口
+  title: $ddt{title}
+  request:
+    method: get
+    url: ${env(wx_base_url)}/cgi-bin/token
+    params:
+      grant_type: client_credential
+      appid: $ddt{appid}
+      secret: $ddt{secret}
+  parametrize:
+      - ["title", "appid", "secret", "contains", "expire_assert"]
+      - ["验证获取鉴权码接口成功返回", "wx8a9de038e93f77ab", "8326fc915928dee3165720c910effb86", "access_token", 7200]
+      - ["账号错误-返回空", "123", "8326fc915928dee3165720c910effb86", "errcode", null]
+      - ["密码错误-返回空", "wx8a9de038e93f77ab", "123", "errcode", null]
+  extract:
+    access_token: [json, "$.access_token"]
+  validate:
+    contains: $ddt{contains}
+    expires_in: $ddt{expire_assert}
