@@ -18,6 +18,6 @@ extract_path = "./extract.yaml"
 
 # 上传文件 路径
 # tom猫图片
-file_path = "H:\\qq文件\\IMG_20250305_210301.jpg"
+file_path = "./tom.jpg"
 
 
