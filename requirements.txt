@@ -1,5 +1,6 @@
 requests
 jsonpath
+pyyaml
 pytest  # 本身单元框架
 pytest-html  # 生成html测试报告
 pytest-xdist  # 多cPu分发
